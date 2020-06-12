@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Fitness | Shopping</title>
+    <link rel="stylesheet" type="text/css" href="sources/page.css">
+</head>
+
+<body>
+    <header>
+        <div id="log">
+            <img id="logopic" src="images/logo.png" alt="logo">
+            <h1 id="messagethank">FERRARI FITNESS</h1>
+        </div>
+    </header>
+    <form id="theForm" action="ferrari1.php" method="POST" onsubmit="submitionChecker()">
+        <main>
+            <!---CHECK HERE FOR THE SHOPPING FORM-->
+            <div class="product">
+                <h2>Costumize Your Deal</h2>
+                <div id="produc-Form">
+                    <input type="checkbox" name="item[]" id="item_0" value="A Year Membership - $ 300.00">
+                    <label>A Year Membership - $ 300.00</label><br><br>
+                    <input type="checkbox" name="item[]" id="item_1" value="45 Days Personal Trainner - $ 200.00">
+                    <label>45 Days Personal Trainner - $ 200.00</label><br><br>
+                    <input type="checkbox" name="item[]" id="item_2" value="30 Days Dietician - $ 150.00">
+                    <label>30 Days Dietician - $ 150.00</label><br><br>
+                    <input type="checkbox" name="item[]" id="item_3" value="A Month Budy Pass - $ 45.00">
+                    <label>A Month Budy Pass - $ 45.00</label><br><br>
+                    <input type="checkbox" name="item[]" id="item_4" value="3 Months Boxing Class - $200.00">
+                    <label>3 Months Boxing Class - $200.00</label><br><br>
+                    <input type="checkbox" name="item[]" id="item_5" value="Family Golden Plan - $ 899.00">
+                    <label>Family Golden Plan - $ 899.00</label><br><br>
+                    <div id="final-price">
+                        <label for="total">Total:</label>
+                        <input type="text" name="total" id="total" readonly><br><br>
+                        <span id="message1"></span>
+                        <button type="button" id="pay">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <!---CHECK HERE FOR THE PAYMENT FORM-->
+            <div id=pay-info>
+                <div>
+                    <h3>Payment Information</h3>
+                </div>
+                <div id=myForm>
+                    <label for="first_name">First Name</label><br>
+                    <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+                    <img src="#" alt="Checked" id="nameChecked" class="checkMark"><br><br>
+
+                    <label for="last_name">Last Name</label><br>
+                    <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+                    <img src="#" alt="Checked" id="lastNameChecked" class="checkMark"><br><br>
+
+                    <label for="address">Adress</label><br>
+                    <input type="text" name="address" id="address" placeholder="Full Address" required>
+                    <img src="#" alt="Checked" id="addressChecked" class="checkMark"><br><br>
+
+                    <label for="phone">Phone</label><br>
+                    <input type="text" name="phone" id="phone" placeholder="000-000-0000" required>
+                    <img src="#" alt="Checked" id="phoneChecked" class="checkMark"><br>
+                    <span class="spanValidator" id="message2">Please Follow This Format 000-000-0000</span><br><br>
+
+                    <label>Credicard Option</label><br>
+                    <input type="radio" name="card" class="card" id="card" value="Visa" required>Visa
+                    <input type="radio" name="card" class="card" value="Mastercard">Mastercard
+                    <input type="radio" name="card" class="card" value="American Express">American express<br><br>
+
+                    <label for="credit_card">Credicard Number</label><br>
+                    <input type="text" name="credit_card" id="credit_card" placeholder="0000 0000 0000 0000" required>
+                    <img src="#" alt="Checked" id="cardChecked" class="checkMark"><br>
+                    <span class="spanValidator" id="message3">Please Follow This Format 0000 0000 0000 0000</span><br><br>
+
+                    <label for="exp_date">Expiration Date</label><br>
+                    <input type="text" name="exp_date" id="exp_date" placeholder="01/2021" required>
+                    <img src="#" alt="Checked" id="dateChecked" class="checkMark"><br>
+                    <span class="spanValidator" id="message4">Please Follow This Format 00/0000</span><br><br>
+
+                    <div id="buttons">
+                        <button type="button" id="pay-button">Submit Payment</button>
+                        <button type="reset" id="cancel-pay">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <!--IMAGE ON THE THIRD GRID PICTURES-->
+            <div id="adds1">
+                <img src="images/guys1.jpg" alt="Becoming Picture">
+            </div>
+            <div id="adds">
+                <img id="fitgirls" src="images/becomingpic.jpg" alt="Becoming Picture">
+            </div>
+        </main>
+    </form>
+    <script src="sources/code.js"></script>
+</body>
+
+</html>

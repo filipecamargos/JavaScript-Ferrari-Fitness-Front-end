@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+#finalMessage {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Trade Winds', sans-serif;
+    font-size: 20px;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+#heart {
+    display: block;
+    text-align: center;
+}
+
+body {
+    background-color: #000000;
+    margin: 0px;
+}
+
+a img:hover {
+    height: 170px;
+    width: 170px;
+}

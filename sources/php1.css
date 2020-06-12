@@ -1,0 +1,32 @@
+#userInformation {
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px
+}
+
+#userInformation h4 {
+    margin-left: 15px;
+}
+
+body {
+    background-color: #000000;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#cancelPay {
+    background-color: #454756;
+}
+
+#cancelPay:hover {
+    background-color: #454966;
+}
+
+@media screen and (max-width: 650px) {
+    #userInformation {
+        width: auto;
+    }
+}

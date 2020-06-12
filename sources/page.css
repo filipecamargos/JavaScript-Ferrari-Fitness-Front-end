@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
+/******************************************
+MAIN AND BODY
+******************************************/
+
+input,
+label,
+button {
+    margin-left: 15px;
+}
+
+#inputstt {
+    padding-bottom: 1em;
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1em 1em 0em;
+    background-color: #000000;
+}
+
+
+/******************************************
+HEADER STYLE
+*******************************************/
+
+#log {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25A1D0;
+    padding: 15px 0 15px;
+    color: #ffffff;
+    font-family: 'Trade Winds', sans-serif;
+    width: 100%;
+}
+
+
+/******************************************
+PRODUCT STYLE REQUEST
+*******************************************/
+
+.product {
+    color: #ffffff;
+    grid-column: 1;
+    background-color: #2E2F36;
+    color: white;
+    width: auto;
+    margin: 0px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2%;
+    letter-spacing: 0.5px;
+}
+
+.product h2 {
+    text-align: center;
+    background-color: #454756;
+    padding: 1em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0;
+}
+
+.product form {
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.product input {
+    background-color: #454756;
+    border-color: #454756;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.product #total {
+    height: 35px;
+    width: 150px;
+}
+
+.product button {
+    padding: 0.8em;
+    width: 100px;
+    color: #ffffff;
+    background-color: #25A1D0;
+    border: none;
+    font-weight: bold;
+    border-radius: 5%;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.product button:hover {
+    background-color: #454756;
+}
+
+#final-price {
+    margin-top: 15%;
+}
+
+
+/******************************************
+PAYMENT FORM STYLE
+*******************************************/
+
+
+/*Error Messages*/
+
+.spanValidator {
+    font-size: 12px;
+    color: red;
+    margin-left: 15px;
+    visibility: hidden;
+}
+
+#pay-info {
+    display: none;
+    background-color: #2E2F36;
+    color: white;
+    width: auto;
+    padding: 0 0 1em;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2%;
+    letter-spacing: 0.5px;
+    grid-column: 2;
+}
+
+#pay-info input {
+    background-color: #454756;
+    border-color: #454756;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    width: 75%;
+}
+
+#pay-info .card {
+    height: 10px;
+}
+
+#pay-info .card {
+    width: 15px;
+    align-content: flex-start;
+}
+
+#pay-info h3 {
+    text-align: center;
+    background-color: #454756;
+    padding: 1em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0;
+}
+
+#pay-info form {
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#pay-info #buttons {
+    text-align: center;
+}
+
+#buttons button {
+    padding: 1em;
+    color: #ffffff;
+    background-color: #25A1D0;
+    border: none;
+    font-weight: bold;
+    border-radius: 5%;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+#buttons button:hover {
+    background-color: #454756;
+}
+
+.checkMark {
+    display: none;
+}
+
+
+/******************************************
+PICTURE STYLE
+*******************************************/
+
+#adds1 {
+    grid-column: 2;
+    display: block;
+}
+
+#adds1 img {
+    height: 100%;
+    width: 100%;
+}
+
+#adds {
+    grid-column: 3;
+}
+
+#adds img {
+    height: 100%;
+    width: 100%;
+}
+
+.userInfo {
+    margin-right: 500px;
+    margin-left: auto;
+}
+
+
+/****************************************
+RESPONSIVE PART
+****************************************/
+
+@media screen and (max-width: 1300px) {
+    #adds1 {
+        display: none;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #adds {
+        display: none;
+    }
+}
